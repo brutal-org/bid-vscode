@@ -1,0 +1,79 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "bid",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#support"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"support": {
+			"patterns": [
+				{
+					"name": "support.type.bid",
+					"match": "((?<=:\\s?))([a-zA-Z_]+)"
+				},
+				{
+					"name": "support.class.bid",
+					"match": "((?<=interface\\s?))([a-zA-Z_]+)"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric.bid",
+					"match": "\\b([0-9xa-f]+)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"match": "(?<=(method\\s))([a-zA-Z_]+)",
+					"name": "entity.name.function.bid"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.bid",
+					"match": "\\b(method|errors|id|type|struct|interface)\\b"
+				},
+				{
+					"name": "keyword.operator.bid",
+					"match": "(->|=)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.bid",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.bid",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.bid",
+	"comment": "(?<=(method\\s))([a-zA-Z]+):w\\s?([{]).+([}])"
+}

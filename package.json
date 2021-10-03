@@ -1,0 +1,25 @@
+{
+    "name": "bid-language",
+    "displayName": "bid",
+    "description": "syntax support for the Brutal Interface Definition language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "bid",
+            "aliases": ["bid"],
+            "extensions": [".bid"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bid",
+            "scopeName": "source.bid",
+            "path": "./syntaxes/bid.tmLanguage.json"
+        }]
+    }
+}
