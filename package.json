@@ -3,7 +3,7 @@
     "displayName": "bid",
     "publisher": "brutal-organisation",
     "description": "syntax support for the Brutal Interface Definition language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": "https://github.com/brutal-org/bid-vscode",
     "icon": "meta/icon.png",
     "engines": {
