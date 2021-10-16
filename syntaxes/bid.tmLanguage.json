@@ -54,7 +54,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.bid",
-					"match": "\\b(method|errors|id|type|struct|interface)\\b"
+					"match": "\\b(method|errors|id|type|struct|interface|event)\\b"
 				},
 				{
 					"name": "keyword.operator.bid",
