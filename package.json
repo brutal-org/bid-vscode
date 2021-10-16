@@ -1,8 +1,11 @@
 {
     "name": "bid-language",
     "displayName": "bid",
+    "publisher": "brutal-organisation",
     "description": "syntax support for the Brutal Interface Definition language",
     "version": "0.0.1",
+    "repository": "https://github.com/brutal-org/bid-vscode",
+    "icon": "meta/icon.png",
     "engines": {
         "vscode": "^1.60.0"
     },
@@ -10,16 +13,24 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "bid",
-            "aliases": ["bid"],
-            "extensions": [".bid"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "bid",
-            "scopeName": "source.bid",
-            "path": "./syntaxes/bid.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "bid",
+                "aliases": [
+                    "bid"
+                ],
+                "extensions": [
+                    ".bid"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "bid",
+                "scopeName": "source.bid",
+                "path": "./syntaxes/bid.tmLanguage.json"
+            }
+        ]
     }
 }
