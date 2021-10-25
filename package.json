@@ -1,9 +1,9 @@
 {
     "name": "bid-language",
-    "displayName": "bid",
-    "publisher": "brutal-organisation",
-    "description": "syntax support for the Brutal Interface Definition language",
-    "version": "0.0.2",
+    "displayName": "Brutal Interface Definition Language",
+    "publisher": "brutal-org",
+    "description": "Syntax support for the Brutal Interface Definition Language",
+    "version": "0.0.3",
     "repository": "https://github.com/brutal-org/bid-vscode",
     "icon": "meta/icon.png",
     "engines": {
